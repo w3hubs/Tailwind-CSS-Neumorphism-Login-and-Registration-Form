@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tailwind CSS Neumorphism Login and Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style type="text/css">
+      body{
+      font-family: 'Nunito Sans', sans-serif;
+      background: #131419;
+      text-align: center;
+      box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+      5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+      box-shadow: none;
+      }
+
+      input{
+      border: 0px;
+      box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+      inset 1px 2px 4px rgba(0, 0, 0, 0.9);
+      background: #131419;
+      height: 55px;
+      font-size: 18px;
+      }
+     
+      button{
+      background: #181b20;
+      box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.1),
+      inset 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="h-screen flex items-center justify-center">
+      <div class="grid lg:grid-cols-2 gap-2 grid-cols-1 px-16 w-full">
+      <div>
+        <h2 class="text-4xl text-white">Login form</h2>
+        <form action="#" class="w-full p-4">
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400  w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="text" placeholder="Username*" required>
+          </div>
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400  w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="password" placeholder="Password*" required>
+          </div>
+          <div class="p-3 pt-4">
+            <button class="w-full text-white font-bold py-3 px-4 text-2xl">
+            Login Now
+            </button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2 class="text-4xl text-white">Register form</h2>
+        <form action="#" class="w-full p-4">
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="text" placeholder="Username*" required>
+          </div>
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="email" placeholder="Email Id" required>
+          </div>
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="password" placeholder="Password*" required>
+          </div>
+          <div class="p-3">
+            <input class="block appearance-none placeholder-gray-500 placeholder-opacity-100 border border-light-blue-400 rounded-md w-full py-3 px-4 text-gray-700 leading-5 focus:outline-none focus:ring-2 focus:ring-light-blue-300" type="password" placeholder="Confrim Password*" required>
+          </div>
+          <div class="p-3 pt-4">
+            <button class="w-full text-white font-bold py-3 px-4 rounded text-2xl">
+            Register Now
+            </button>
+        </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
